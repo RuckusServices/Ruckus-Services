@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Ruckus Services provides landscaping, lawn care, junk removal, pressure washing, dumpster rentals, gutter cleaning and more in Decatur, Alabama and surrounding areas.">
+<meta property="og:title" content="Ruckus Services | Lawn Care & Property Services">
+<meta property="og:description" content="Lawn care, landscaping, yard cleanup, pressure washing and more in Decatur, Alabama.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ruckusservices.github.io/Ruckus-Services/">
+<meta property="og:image" content="https://ruckusservices.github.io/Ruckus-Services/ruckus-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="theme-color" content="#0a0d0b">
 <title>Ruckus Services | Decatur, Alabama</title>
 <style>
@@ -22,10 +29,10 @@ header{position:sticky;top:0;z-index:10;background:rgba(8,11,9,.96);border-botto
 nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
 nav a{text-decoration:none;color:#e6ece5;font-weight:700;font-size:13px}
 nav a:hover{color:var(--green)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#10150e;padding:13px 19px;border-radius:5px;font-weight:900;text-decoration:none;border:0;cursor:pointer;box-shadow:0 5px 20px #79f12e20}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#10150e;padding:13px 19px;border-radius:5px;font-weight:900;text-decoration:none;border:0;cursor:pointer;transition:.2s ease}
 .btn:hover{background:#92ff52}
 .btn.outline{background:transparent;color:var(--green);border:1px solid var(--green);box-shadow:none}
-.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--green);background:linear-gradient(90deg,#050806 0%,rgba(5,8,6,.94) 34%,rgba(5,8,6,.48) 66%,rgba(5,8,6,.15) 100%),url('assets/crew-photo.jpg') center 43%/cover no-repeat}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--green);background:linear-gradient(90deg,#050806 0%,rgba(5,8,6,.94) 34%,rgba(5,8,6,.48) 66%,rgba(5,8,6,.15) 100%),url('assets/crew-hero.jpg') center/cover no-repeat}
 .hero-inner{min-height:500px;display:flex;align-items:center;padding:68px 0}
 .hero-copy{max-width:610px}
 .kicker{color:var(--green);font-size:12px;font-weight:900;letter-spacing:.19em;text-transform:uppercase}
@@ -67,8 +74,8 @@ footer{padding:32px 0;background:#050705}
 footer p{color:var(--muted);font-size:13px;margin:6px 0}
 footer a{color:var(--green);text-decoration:none}
 hr{border:0;border-top:1px solid var(--line);margin:22px 0}
-@media(max-width:800px){.nav{align-items:flex-start}.nav nav{justify-content:flex-end;gap:12px}.nav nav a{font-size:12px}.nav .nav-quote{display:none}.hero-inner{min-height:460px}.services-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.quote-grid{grid-template-columns:1fr}.about-photo{height:300px}}
-@media(max-width:520px){.nav{flex-wrap:wrap}.nav nav{width:100%;justify-content:space-between}.brand-name{font-size:18px}.hero{background-position:58% center}.hero-inner{min-height:470px;padding:48px 0}.hero-copy{background:#080b09a8;padding:14px;border-radius:8px}section{padding:52px 0}.services-grid{grid-template-columns:1fr}.service{min-height:0}.values{grid-template-columns:1fr}form{grid-template-columns:1fr}.full{grid-column:auto}}
+@media(max-width:800px){.nav{align-items:flex-start}.nav nav{justify-content:flex-end;gap:12px}.nav nav a{font-size:12px}.nav .nav-quote{display:none}.hero-inner{min-height:460px}.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.nav{flex-wrap:wrap}.nav nav{width:100%;justify-content:space-between}.brand-name{font-size:18px}.hero{background-position:58% center}.hero-inner{min-height:470px;padding:48px 0}.services-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.quote-grid{grid-template-columns:1fr}.form{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -110,7 +117,7 @@ hr{border:0;border-top:1px solid var(--line);margin:22px 0}
       <article class="service"><div class="icon">⌂</div><h3>Gutter Cleaning</h3><p>Help remove leaves and debris from gutters to support proper water drainage.</p></article>
     </div>
     <div class="additional"><h3>Additional Services</h3><div class="pills">
-      <span class="pill">Mulch Installation</span><span class="pill">Moving Services</span><span class="pill">Trash-Bin Cleaning</span><span class="pill">House Painting</span><span class="pill">Curb House-Number Painting</span><span class="pill">TV Mounting</span><span class="pill">Peephole Installation</span><span class="pill">Yard Cleanups</span>
+      <span class="pill">Mulch Installation</span><span class="pill">Moving Services</span><span class="pill">Trash-Bin Cleaning</span><span class="pill">House Painting</span><span class="pill">Curb Help</span><span class="pill">Property Cleanups</span>
     </div></div>
   </div>
 </section>
@@ -119,7 +126,7 @@ hr{border:0;border-top:1px solid var(--line);margin:22px 0}
   <div class="wrap about-grid">
     <img class="about-photo" src="assets/crew-photo.jpg" alt="Ruckus Services crew working on a lawn" loading="lazy">
     <div class="about-copy"><span class="kicker">Local Service. Hard Work.</span><h2>About Ruckus Services</h2>
-      <p>Ruckus Services is a property-services business serving Decatur, Alabama and surrounding communities. Our goal is to make it easier to care for your home and property with practical services, clear communication, and attention to detail.</p>
+      <p>Ruckus Services is a property-services business serving Decatur, Alabama and surrounding communities. Our goal is to make it easier to care for your home and property with practical services, dependable help, and friendly communication.</p>
       <p>Have a one-time project or looking for recurring lawn maintenance? Tell us what you need and we'll discuss the best next step.</p>
       <div class="values"><div class="value"><b>✓</b>Reliable Service</div><div class="value"><b>✓</b>Quality Work</div><div class="value"><b>✓</b>Customer Focus</div></div>
     </div>
@@ -128,14 +135,14 @@ hr{border:0;border-top:1px solid var(--line);margin:22px 0}
 
 <section class="quote" id="quote">
   <div class="wrap quote-grid">
-    <div><span class="kicker">Let's Get Started</span><h2>Request a Free Quote</h2><p style="color:var(--muted)">Tell us a little about your project. Complete the form and your email app will open with the details ready to send.</p><p class="small">Quotes and scheduling are subject to confirmation.</p></div>
+    <div><span class="kicker">Let's Get Started</span><h2>Request a Free Quote</h2><p style="color:var(--muted)">Tell us a little about your project. Complete the form and your email app will open with a draft ready to send.</p></div>
     <form id="quoteForm">
       <div><label for="name">Your Name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
       <div><label for="phone">Phone Number *</label><input id="phone" name="phone" autocomplete="tel" required placeholder="Best number to reach you"></div>
       <div><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
-      <div><label for="service">Service Needed *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Landscaping</option><option>Lawn Care</option><option>Junk Removal</option><option>Pressure Washing</option><option>Dumpster Rental</option><option>Gutter Cleaning</option><option>Mulch Installation</option><option>Moving Services</option><option>Trash-Bin Cleaning</option><option>House Painting</option><option>Curb House-Number Painting</option><option>TV Mounting</option><option>Peephole Installation</option><option>Yard Cleanup</option><option>Other / Multiple Services</option></select></div>
+      <div><label for="service">Service Needed *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Landscaping</option><option>Lawn Care</option><option>Junk Removal</option><option>Pressure Washing</option><option>Dumpster Rentals</option><option>Gutter Cleaning</option></select></div>
       <div class="full"><label for="details">Project Details / Service Address</label><textarea id="details" name="details" placeholder="Tell us what you need, your location, and preferred timing."></textarea></div>
-      <div class="full"><button class="btn" type="submit">PREPARE QUOTE REQUEST →</button><p class="small">This starter website does not store form submissions. It opens an email draft addressed to Ruckus Services.</p></div>
+      <div class="full"><button class="btn" type="submit">PREPARE QUOTE REQUEST →</button><p class="small">This starter website does not store form submissions. It opens an email draft addressed to ruckus.services@yahoo.com.</p></div>
     </form>
   </div>
 </section>
@@ -158,15 +165,226 @@ document.getElementById('quoteForm').addEventListener('submit', function(e){
   const f = new FormData(this);
   const subject = encodeURIComponent('Ruckus Services Quote Request — ' + f.get('service'));
   const body = encodeURIComponent(
-    'Quote request for Ruckus Services\\n\\n' +
-    'Name: ' + f.get('name') + '\\n' +
-    'Phone: ' + f.get('phone') + '\\n' +
-    'Email: ' + (f.get('email') || 'Not provided') + '\\n' +
-    'Service: ' + f.get('service') + '\\n\\n' +
-    'Project details / address / preferred timing:\\n' + (f.get('details') || 'Not provided')
+    'Quote request for Ruckus Services\n\n' +
+    'Name: ' + f.get('name') + '\n' +
+    'Phone: ' + f.get('phone') + '\n' +
+    'Email: ' + (f.get('email') || 'Not provided') + '\n' +
+    'Service: ' + f.get('service') + '\n\n' +
+    'Project details / address / preferred timing:\n' + (f.get('details') || 'Not provided')
   );
   window.location.href = 'mailto:ruckus.services@yahoo.com?subject=' + subject + '&body=' + body;
 });
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
