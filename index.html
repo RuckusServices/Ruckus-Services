@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ruckus Services provides landscaping, lawn care, junk removal, pressure washing, dumpster rentals, gutter cleaning and more in Decatur, Alabama and surrounding areas.">
+<meta name="theme-color" content="#0a0d0b">
+<title>Ruckus Services | Decatur, Alabama</title>
+<style>
+:root{--bg:#080b09;--panel:#111713;--panel2:#171e18;--green:#79f12e;--green2:#4cb91c;--white:#f7f8f5;--muted:#b9c3b8;--line:#2a382b;--silver:#c8d0c7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,11,9,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}
+.mark{width:52px;height:52px;flex:none;border:2px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:24px;font-weight:900;box-shadow:0 0 18px #79f12e22}
+.brand-name{font-weight:900;letter-spacing:.04em;line-height:1.05;font-size:20px}
+.brand-name span{display:block;color:var(--green);font-style:italic;font-size:14px;letter-spacing:.13em;margin-top:4px}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;color:#e6ece5;font-weight:700;font-size:13px}
+nav a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#10150e;padding:13px 19px;border-radius:5px;font-weight:900;text-decoration:none;border:0;cursor:pointer;box-shadow:0 5px 20px #79f12e20}
+.btn:hover{background:#92ff52}
+.btn.outline{background:transparent;color:var(--green);border:1px solid var(--green);box-shadow:none}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--green);background:linear-gradient(90deg,#050806 0%,rgba(5,8,6,.94) 34%,rgba(5,8,6,.48) 66%,rgba(5,8,6,.15) 100%),url('assets/crew-photo.jpg') center 43%/cover no-repeat}
+.hero-inner{min-height:500px;display:flex;align-items:center;padding:68px 0}
+.hero-copy{max-width:610px}
+.kicker{color:var(--green);font-size:12px;font-weight:900;letter-spacing:.19em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,66px);line-height:.99;letter-spacing:-.035em;margin:15px 0 18px;text-transform:uppercase}
+h1 span{color:var(--green)}
+.hero p{font-size:17px;color:#e0e7de;max-width:520px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 14px}
+.location{color:#e1e7df;font-size:14px}
+section{padding:68px 0}
+.section-heading{text-align:center;margin-bottom:34px}
+.section-heading .kicker{display:block}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:9px 0 12px;text-transform:uppercase}
+.section-heading p{color:var(--muted);max-width:650px;margin:0 auto}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);padding:23px;border-radius:10px;min-height:174px}
+.service .icon{color:var(--green);font-size:28px;font-weight:900}
+.service h3{margin:8px 0 6px;font-size:18px}
+.service p{margin:0;color:var(--muted);font-size:14px}
+.additional{margin-top:26px;background:#0d120e;border:1px solid var(--line);border-radius:10px;padding:22px}
+.additional h3{color:var(--green);margin:0 0 12px;text-transform:uppercase}
+.pills{display:flex;gap:9px;flex-wrap:wrap}
+.pill{border:1px solid #344531;border-radius:30px;padding:7px 12px;color:#e7eee5;font-size:13px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.about-photo{width:100%;height:380px;object-fit:cover;object-position:center;border-radius:12px;border:1px solid var(--line)}
+.about-copy p{color:var(--muted)}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.value{padding:14px 10px;background:var(--panel);border:1px solid var(--line);border-radius:8px;text-align:center;font-size:13px;font-weight:800}
+.value b{display:block;color:var(--green);font-size:22px}
+.quote{background:radial-gradient(ellipse at top right,#18321a 0%,#0c110d 52%,#080b09 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quote-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}
+form{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+label{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-bottom:5px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #39463a;background:#080b09;color:var(--white);border-radius:5px;font:inherit}
+textarea{min-height:118px;resize:vertical}
+.full{grid-column:1/-1}
+.small{font-size:12px;color:var(--muted)}
+footer{padding:32px 0;background:#050705}
+.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+footer p{color:var(--muted);font-size:13px;margin:6px 0}
+footer a{color:var(--green);text-decoration:none}
+hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+@media(max-width:800px){.nav{align-items:flex-start}.nav nav{justify-content:flex-end;gap:12px}.nav nav a{font-size:12px}.nav .nav-quote{display:none}.hero-inner{min-height:460px}.services-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.quote-grid{grid-template-columns:1fr}.about-photo{height:300px}}
+@media(max-width:520px){.nav{flex-wrap:wrap}.nav nav{width:100%;justify-content:space-between}.brand-name{font-size:18px}.hero{background-position:58% center}.hero-inner{min-height:470px;padding:48px 0}.hero-copy{background:#080b09a8;padding:14px;border-radius:8px}section{padding:52px 0}.services-grid{grid-template-columns:1fr}.service{min-height:0}.values{grid-template-columns:1fr}form{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Ruckus Services home">
+      <div class="mark">R</div>
+      <div class="brand-name">RUCKUS <span>SERVICES</span></div>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#quote">Request a Quote</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn nav-quote" href="#quote">GET A QUOTE ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">Property &amp; Home Services</div>
+      <h1>Professional <span>Property Services</span> You Can Count On</h1>
+      <p>From lawn care to property cleanups, Ruckus Services is here to help keep your home and property looking their best.</p>
+      <div class="hero-actions"><a class="btn" href="#quote">REQUEST A FREE QUOTE →</a><a class="btn outline" href="#services">EXPLORE SERVICES</a></div>
+      <div class="location">📍 Serving Decatur, AL &amp; surrounding areas</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-heading"><span class="kicker">What We Do</span><h2>Our Main Services</h2><p>Dependable help for your yard, home, and property. Contact us to discuss your project and availability.</p></div>
+    <div class="services-grid">
+      <article class="service"><div class="icon">✳</div><h3>Landscaping</h3><p>Refresh outdoor spaces with yard improvements, bed cleanup, mulch installation, and seasonal tidy-ups.</p></article>
+      <article class="service"><div class="icon">✂</div><h3>Lawn Care</h3><p>Lawn mowing, edging, weed trimming, routine maintenance, and overgrown-yard cleanup.</p></article>
+      <article class="service"><div class="icon">↗</div><h3>Junk Removal</h3><p>Clear out unwanted items and clutter from homes, garages, yards, and other properties.</p></article>
+      <article class="service"><div class="icon">≈</div><h3>Pressure Washing</h3><p>Exterior cleaning for suitable surfaces around your home or property.</p></article>
+      <article class="service"><div class="icon">▤</div><h3>Dumpster Rentals</h3><p>Ask about available dumpster options for cleanouts, projects, and property debris.</p></article>
+      <article class="service"><div class="icon">⌂</div><h3>Gutter Cleaning</h3><p>Help remove leaves and debris from gutters to support proper water drainage.</p></article>
+    </div>
+    <div class="additional"><h3>Additional Services</h3><div class="pills">
+      <span class="pill">Mulch Installation</span><span class="pill">Moving Services</span><span class="pill">Trash-Bin Cleaning</span><span class="pill">House Painting</span><span class="pill">Curb House-Number Painting</span><span class="pill">TV Mounting</span><span class="pill">Peephole Installation</span><span class="pill">Yard Cleanups</span>
+    </div></div>
+  </div>
+</section>
+
+<section id="about" style="background:#0c100d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap about-grid">
+    <img class="about-photo" src="assets/crew-photo.jpg" alt="Ruckus Services crew working on a lawn" loading="lazy">
+    <div class="about-copy"><span class="kicker">Local Service. Hard Work.</span><h2>About Ruckus Services</h2>
+      <p>Ruckus Services is a property-services business serving Decatur, Alabama and surrounding communities. Our goal is to make it easier to care for your home and property with practical services, clear communication, and attention to detail.</p>
+      <p>Have a one-time project or looking for recurring lawn maintenance? Tell us what you need and we'll discuss the best next step.</p>
+      <div class="values"><div class="value"><b>✓</b>Reliable Service</div><div class="value"><b>✓</b>Quality Work</div><div class="value"><b>✓</b>Customer Focus</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap quote-grid">
+    <div><span class="kicker">Let's Get Started</span><h2>Request a Free Quote</h2><p style="color:var(--muted)">Tell us a little about your project. Complete the form and your email app will open with the details ready to send.</p><p class="small">Quotes and scheduling are subject to confirmation.</p></div>
+    <form id="quoteForm">
+      <div><label for="name">Your Name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
+      <div><label for="phone">Phone Number *</label><input id="phone" name="phone" autocomplete="tel" required placeholder="Best number to reach you"></div>
+      <div><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+      <div><label for="service">Service Needed *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Landscaping</option><option>Lawn Care</option><option>Junk Removal</option><option>Pressure Washing</option><option>Dumpster Rental</option><option>Gutter Cleaning</option><option>Mulch Installation</option><option>Moving Services</option><option>Trash-Bin Cleaning</option><option>House Painting</option><option>Curb House-Number Painting</option><option>TV Mounting</option><option>Peephole Installation</option><option>Yard Cleanup</option><option>Other / Multiple Services</option></select></div>
+      <div class="full"><label for="details">Project Details / Service Address</label><textarea id="details" name="details" placeholder="Tell us what you need, your location, and preferred timing."></textarea></div>
+      <div class="full"><button class="btn" type="submit">PREPARE QUOTE REQUEST →</button><p class="small">This starter website does not store form submissions. It opens an email draft addressed to Ruckus Services.</p></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="#home"><div class="mark">R</div><div class="brand-name">RUCKUS <span>SERVICES</span></div></a>
+      <div><strong>Contact</strong><p><a href="mailto:ruckus.services@yahoo.com">ruckus.services@yahoo.com</a></p><p>Decatur, AL &amp; surrounding areas</p></div>
+      <div><strong>Service Area</strong><p>Residential &amp; commercial inquiries welcome</p><p><a href="#quote">Request a quote →</a></p></div>
+    </div>
+    <hr><p>© <span id="year"></span> Ruckus Services. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = new FormData(this);
+  const subject = encodeURIComponent('Ruckus Services Quote Request — ' + f.get('service'));
+  const body = encodeURIComponent(
+    'Quote request for Ruckus Services\\n\\n' +
+    'Name: ' + f.get('name') + '\\n' +
+    'Phone: ' + f.get('phone') + '\\n' +
+    'Email: ' + (f.get('email') || 'Not provided') + '\\n' +
+    'Service: ' + f.get('service') + '\\n\\n' +
+    'Project details / address / preferred timing:\\n' + (f.get('details') || 'Not provided')
+  );
+  window.location.href = 'mailto:ruckus.services@yahoo.com?subject=' + subject + '&body=' + body;
+});
+</script>
+</body>
+</html>
